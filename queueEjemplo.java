@@ -12,19 +12,31 @@ public class queueEjemplo {
 
    
     public static void main(String[] args) {
-        Queue<String> fila = new LinkedList<>();
-        
-        fila.add("Nicolas");
-        fila.add("Enzo");
-        fila.add("Alexis");
-                
-        System.out.println(fila.poll());
-        
-        System.out.println(fila.poll());
-        
-        System.out.println(fila.poll());
-        
-        System.out.println(fila.isEmpty());
+           Queue<Integer> fila = new LinkedList<>();
+//        
+//        fila.add("Nicolas");
+//        fila.add("Enzo");
+//        fila.add("Alexis");
+//                
+//        System.out.println(fila.poll());
+//        
+//        System.out.println(fila.poll());
+//        
+//        System.out.println(fila.poll());
+//        
+//        System.out.println(fila.isEmpty());
+           Fila fila1 = new Fila();
+
+            fila.add(1);
+            fila.add(2);
+            fila.add(3);
+            fila.add(4);
+            
+            System.out.println("Cola original: " + fila);
+
+           fila1.Invertir(fila);
+
+        System.out.println("Cola invertida: " + fila);
         
     }
     
